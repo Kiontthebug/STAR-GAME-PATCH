@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Gwiezdny Niszczyciel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gwiezdny Niszczyciel</h1>
+        <p>Klikaj na żółte gwiazdki, ale nie dotykaj zielonych kwadratów!</p>
+    </header>
+    <main>
+        <div class="board">
+            <div class="hole" id="h0"></div>
+            <div class="hole" id="h1"></div>
+            <div class="hole" id="h2"></div>
+            <div class="hole" id="h3"></div>
+            <div class="hole" id="h4"></div>
+            <div class="hole" id="h5"></div>
+            <div class="hole" id="h6"></div>
+            <div class="hole" id="h7"></div>
+            <div class="hole" id="h8"></div>
+        </div>
+        <div class="score">Wynik: 0</div>
+        <div class="message"></div>
+        <button class="restart-btn" onclick="restartGame()">Zagraj ponownie</button>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="game.js"></script>
+        
+    </main>
+</body>
+</html>

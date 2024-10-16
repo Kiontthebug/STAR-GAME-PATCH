@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    background-color: #26282E;
+    color: #209781;
+    font-family: 'Lobster', sans-serif;
+    font-size: 28px;
+}
+
+h1, p {
+    text-align: center;
+    margin: 20px;
+}
+
+.board {
+    width: 320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.hole {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make each hole a circle */
+    background-color: #333;
+    position: relative;
+}
+
+.star, .square {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.star {
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.square {
+    background-color: green;
+}
+
+.active {
+    opacity: 1;
+}
+
+.score {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.message {
+    text-align: center;
+    color: red;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.restart-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #209781;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.restart-btn:hover {
+    background-color: #51c8b2;
+}
